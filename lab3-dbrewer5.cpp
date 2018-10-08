@@ -12,7 +12,9 @@ int main() {
   std::cin >> nshort;
 
   // Calculate the sigma(i=1, n, i)
-  for (short i = 1; i <= nshort; i++) {  /*NOTE: A value of n > 255 will cause sum to overflow*/
+  /*NOTE: A value of n > 255 will cause sum to overflow*/
+  /*NOTE: An overflow can be detected when sum out of nowhere becomes negative*/
+  for (short i = 1; i <= nshort; i++) {
     sumshort += i;
   }
 
@@ -20,7 +22,7 @@ int main() {
   std::cout << "n = " << nshort << "\n";
   std::cout << "sum = " << sumshort << "\n";
 
-  /*  Part #4  */
+  /*  Part #3  */
   long nlong, sumlong=0;
 
   // Get a value for n to computer the sigma(i=1, n, i) of
@@ -28,7 +30,8 @@ int main() {
   std::cin >> nlong;
 
   // Calculate the sigma(i=1, n, i)
-  for (long i = 1; i <= nlong; i++) {   /*NOTE: A value of n > will cause sum to overflow*/
+  /*NOTE: A value of n > 8965506 will cause sum to overflow*/
+  for (long i = 1; i <= nlong; i++) {
     sumlong += i;
   }
 
