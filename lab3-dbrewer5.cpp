@@ -68,6 +68,37 @@ int main() {
   std::cout << "n = " << nLong << "\n";
   std::cout << "product = " << productDouble << "\n";
 
+  /*  Part #6  */
+  double a = 0.0;
+  float b = 0.0;
+
+  int n;
+
+  // Get an input value for n
+  std::cout << "Enter a value for 'n': ";
+  std::cin >> n;
+
+  // Calculate 1/n * n
+  for (int i = 1; i <= n; i++) {
+    a += (1.0/n);
+    b += (1.0/n);
+  }
+
+  // Output the results
+  std::cout << "Double: " << a << "\n";
+  std::cout << "Float: " << b << "\n";
+
+  /*  Part #7  */
+  for (float i = 3.4; i < 4.4; i += 0.2)
+	{
+		std::cout << "i = " << i << std::endl;
+	}
+
+  /*  Part #8  */
+  for (double i = 3.4; i < 4.4; i += 0.2)
+  {
+  	std::cout << "i = " << i << std::endl;
+  }
 
   return 0;
 }
