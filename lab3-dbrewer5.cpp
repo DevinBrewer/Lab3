@@ -5,39 +5,69 @@
 
 int main() {
   /*  Part #1 & #2  */
-  short nshort, sumshort=0;
+  short nShort, sumShort=0;
 
   // Get a value for n to compute the sigma(i=1, n, i) of
   std::cout << "Enter a value for 'n': ";
-  std::cin >> nshort;
+  std::cin >> nShort;
 
   // Calculate the sigma(i=1, n, i)
-  /*NOTE: A value of n > 255 will cause sum to overflow*/
-  /*NOTE: An overflow can be detected when sum out of nowhere becomes negative*/
-  for (short i = 1; i <= nshort; i++) {
-    sumshort += i;
+  for (short i = 1; i <= nShort; i++) {
+    sumShort += i;
   }
 
   // Output the result of the function
-  std::cout << "n = " << nshort << "\n";
-  std::cout << "sum = " << sumshort << "\n";
+  std::cout << "n = " << nShort << "\n";
+  std::cout << "sum = " << sumShort << "\n";
 
   /*  Part #3  */
-  long nlong, sumlong=0;
+  long nLong, sumLong=0;
 
   // Get a value for n to computer the sigma(i=1, n, i) of
   std::cout << "Enter a new value for 'n': ";
-  std::cin >> nlong;
+  std::cin >> nLong;
 
   // Calculate the sigma(i=1, n, i)
-  /*NOTE: A value of n > 8965506 will cause sum to overflow*/
-  for (long i = 1; i <= nlong; i++) {
-    sumlong += i;
+  for (long i = 1; i <= nLong; i++) {
+    sumLong += i;
   }
 
   // Output the result of the function
-  std::cout << "n = " << nlong << "\n";
-  std::cout << "sum = " << sumlong << "\n";
+  std::cout << "n = " << nLong << "\n";
+  std::cout << "sum = " << sumLong << "\n";
+
+  /*  Part #4  */
+  float productFloat=1;
+
+  // Get a value for n to compute the product(i=1, n, i)
+  std::cout << "Enter a new value 'n:' ";
+  std::cin >> nLong;
+
+  // Calculate the product(i=1, n, i)
+  for (long i = 1; i <= nLong; i++) {
+    productFloat *= i;
+  }
+
+  // Output the result of the function
+  std::cout << "n = " << nLong << "\n";
+  std::cout << "product = " << productFloat << "\n";
+
+  /*  Part #5  */
+  double productDouble=1;
+
+  // Get a value for n to compute the product(i=1, n, i)
+  std::cout << "Enter a new value 'n:' ";
+  std::cin >> nLong;
+
+  // Calculate the product(i=1, n, i)
+  for (long i = 1; i <= nLong; i++) {
+    productDouble *= i;
+  }
+
+  // Output the result of the function
+  std::cout << "n = " << nLong << "\n";
+  std::cout << "product = " << productDouble << "\n";
+
 
   return 0;
 }
